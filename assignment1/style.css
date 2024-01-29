@@ -1,0 +1,80 @@
+body {
+    text-align: center;
+    /* display: flex; */
+    align-items: center;
+    margin: 0;
+    background-image: url("bg3.png");
+    background-size: cover;
+    color: white;
+}
+
+.lyric-text {
+    display: inline-block;
+    animation: scaleAni 0.2s ease-out;
+    font-size: 64px;
+}
+
+#mainContent {
+    width: 65%;
+    background-color: black;
+    margin: 50px auto;
+    min-height: 75px;
+    padding: 25px;
+    font-size: 18px;
+    border-width: 20px;
+    border-style: double;
+    border-image: linear-gradient(to right, red, rgb(0, 92, 167)) 1;
+}
+
+
+
+#cen {
+    width: 75%;
+    margin: 50px auto;
+    min-height: 75px;
+}
+
+@keyframes scaleAni {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+.lyr-slide-down {
+    opacity: 1;
+    animation: slidedown 0.5s ease-out;
+    font-size: 64px;
+    display: inline-block;
+}
+
+@keyframes slidedown {
+    from {
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.lyr-slide-up {
+    opacity: 1;
+    animation: slideup 0.5s ease-out;
+    font-size: 64px;
+    display: inline-block;
+}
+
+@keyframes slideup {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
