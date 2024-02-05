@@ -1,0 +1,104 @@
+.verse {
+    margin-bottom: 45px;
+}
+
+main {
+    width: 75%;
+    background-color: white;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: brown;
+}
+
+#poem {
+    text-align: center;
+    transition: color 2s;
+}
+
+#poem p:hover {
+    color: rgb(153, 153, 0);
+    font-size: 18px;
+    transition: color 2s, font-size 2s;
+}
+
+#page-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+#images{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#images img {
+    margin: 20px;
+}
+
+#images img:hover {
+    animation: shake 0.2s infinite;
+    filter: invert(100%);
+}
+
+#gnu {
+    text-align: center;
+    font-size: 72px;
+    animation: visor 5s infinite;
+}
+
+#tuxImage {
+    position: absolute;
+    animation: tuxMove 5s ease-in-out infinite;
+}
+
+@keyframes tuxMove {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes shake {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    10%, 30%, 50%, 70%, 90% {
+        transform: translateX(-10px);
+    }
+    20%, 40%, 60%, 80% {
+        transform: translateX(10px);
+    }
+}
+
+@keyframes visor {
+    0% {
+        color: red;
+    }
+    25% {
+        color: blue;
+    }
+    50% {
+        color: green;
+    }
+    75%{
+        color: orange;
+    }
+    100%{
+        color: red;
+    }
+}
