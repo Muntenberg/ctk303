@@ -1,0 +1,68 @@
+#birb {
+    max-width: 20%;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#body {
+    animation: fadein 2s;
+}
+
+#Head {
+    scale: 0%;
+    transform-origin: center 200px;
+}
+#Head {
+    animation: headIn 1s ease-in-out 1s forwards;
+}
+
+#r_eye{
+    scale: 0%;
+    transform-origin: center -200px;
+    animation: headIn 1s ease-in-out 1s forwards;
+}
+
+#l_eye {
+    scale: 0%;
+    transform-origin: center -200px;
+    animation: headIn 1s ease-in-out 1s forwards;
+}
+
+#wing {
+    opacity: 0%;
+    transform-origin: center 200px;
+    animation: wing 1s ease-in-out 1.5s forwards; 
+}
+
+#beak {
+    opacity: 0%;
+    animation: eyes 1s ease-in-out 1.2s forwards; 
+}
+
+@keyframes fadein {
+    0%{ transform: translateY(100px); opacity: 0%; }
+    100%{ opacity: 100%; transform: translateY(0px);}
+}
+
+@keyframes headIn {
+    0%{ scale: 0%; }
+    100%{ scale: 100%;}
+}
+
+@keyframes eyes {
+    0% {opacity: 0%;}
+    100% {opacity: 100%;}
+}
+
+@keyframes wing {
+    0% {transform: rotate(-30deg); opacity: 0%;}
+    70% {transform: rotate(10deg); opacity: 100%;}
+    100% {transform: rotate(0deg); opacity: 100%;}
+}
