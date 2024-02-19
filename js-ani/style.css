@@ -1,0 +1,109 @@
+@font-face {
+    font-family: consola-font;
+    src: url("./consola.ttf");
+}
+
+#circle-main {
+    width: 0;
+    height: 0;
+    background-color: black;
+    border-radius: 50%;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    transform-origin: center center;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+}
+
+p {
+    font-family: consola-font;
+}
+
+#mainText{
+    position: relative;
+    top: 2500px;
+    z-index: 50;
+    padding: 0 25%;
+    color: white;
+}
+
+#title-text {
+    position: fixed;
+    transform: translate(-50%, -50%);
+    transform-origin: center center;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    font-size: 72px;
+    margin: 0;
+    font-family: consola-font;
+}
+
+#scroll-arrow {
+    fill: aqua;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    top: 90%;
+    left: 50%;
+    width: 20%;
+    transform-origin: center center;
+    z-index: 1;
+    animation: arrowAnimation 5s ease-in-out infinite;
+}
+
+.cls-1 {
+    fill: aqua;
+}
+
+@keyframes arrowAnimation {
+    0% {
+        transform: translate(-50%, 0);
+    }
+    50% {
+        transform: translate(-50%, 20px);
+    }
+    100% {
+        transform: translate(-50%, 0);
+    }
+}
+
+#projects-text{
+    font-size: 48px;
+    text-align: center;
+    font-family: consola-font;
+    margin-top: 150px;
+    margin-bottom: 100px;
+}
+
+nav {
+    vertical-align: middle;
+    margin-bottom: 75px;
+}
+
+nav>ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.project {
+    display: flex;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.right-image, .left-image {
+    width: 300px;
+    height: 150px;
+    object-fit: cover;
+    margin: 25px;
+}
+
+.right-image {
+    float: right;
+}
+
+.left-image {
+    float: left;
+}
