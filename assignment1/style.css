@@ -3,6 +3,7 @@ body {
     /* display: flex; */
     align-items: center;
     margin: 0;
+    background-color: black;
     background-image: url("bg3.png");
     background-size: cover;
     color: white;
